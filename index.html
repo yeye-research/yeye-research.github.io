@@ -61,18 +61,44 @@
 
   <h2>Background</h2>
   <p>I work independently on evaluation methodology for text-overlap and citation-verification tools.
-  The starting point was practical: in my own document workflow, a checker would report a citation as
-  <em>found</em> on the strength of ten or twelve characters shared with a source that never contained
-  the claim. Checking that by hand, sentence by sentence, is what turned into the study reported in my
-  current work.</p>
+  The starting point was practical rather than academic: in my own document workflow, a checker would
+  report a citation as <em>found</em> on the strength of ten or twelve characters shared with a source
+  that never contained the claim.</p>
+  <p>After the same failure had turned up often enough, checking by hand stopped being enough. The
+  question became measurable: <em>if a checker says a sentence is sourced, how often is it wrong, and
+  what does that rate depend on?</em> Answering it needed three things I did not have — a corpus I
+  controlled, a ground truth I was willing to defend in public, and a statistic that would survive
+  someone trying to break it. Building those three is what this work is.</p>
   <p>Concretely, I assembled a corpus of 46 publicly available technical articles and transcripts
   (about 1.28 million characters), cut 308 sentences out of it for verification, and constructed 1,803
   matched negative pairs against them. The human side is 100 blind labels collected from three raters
   across five rating passes, including two independent raters working from the same written criteria.
-  The software side is a set of released scripts plus an independent MATLAB re-computation, so that
-  every number in the paper can be re-derived from the published data rather than taken on trust.</p>
-  <p>No institutional affiliation and no external funding. The corpus construction, the annotation
-  protocol, the analysis and the replication package are all my own work.</p>
+  The software side is a released set of scripts plus an independent MATLAB re-computation, so that
+  every number can be re-derived from the data rather than taken on trust.</p>
+  <p>The parts with no off-the-shelf answer were the ones worth the time: a stratified sampling design
+  so that a hundred labels would be <em>informative</em> rather than merely numerous; an annotation
+  protocol whose criteria are written down before anyone sees the items; and a significance treatment
+  built on simultaneous bands, because a twelve-point threshold sweep invites exactly the comparison
+  that pointwise intervals cannot support.</p>
+  <p>I work alone and without funding. That has one advantage worth stating plainly — nothing in the
+  analysis is shaped by a sponsor's expectation — and one cost, which I try to pay openly: where a
+  number rests on a judgement call, the call is written down next to the number instead of being left
+  implicit, and where a result came out negative, it is reported as the result.</p>
+  <p>No institutional affiliation and no external funding. The corpus, the annotation protocol, the
+  analysis and the replication package are my own work, and none of it is commissioned by or submitted
+  on behalf of any organisation.</p>
+
+  <h2>How I work</h2>
+  <ul>
+    <li><strong>Corpus first, claims second.</strong> Every statement I make is tied to a countable item
+    in a dataset I can hand over.</li>
+    <li><strong>Written criteria before labels.</strong> Raters see the rules before they see the
+    items — otherwise the labels measure the rater, not the material.</li>
+    <li><strong>Negative results are results.</strong> A metric that fails is a finding to be reported,
+    not a setback to be smoothed over.</li>
+    <li><strong>Recompute, don't trust.</strong> An independent implementation in a second language is
+    the minimum bar for a number I am willing to publish.</li>
+  </ul>
 
   <h2>Identifiers</h2>
   <p>ORCID: <a href="https://orcid.org/0009-0001-9761-9584">0009-0001-9761-9584</a></p>
@@ -89,10 +115,11 @@
   </ul>
 
   <h2>Current work</h2>
-  <p>A full audit of one citation-checking pipeline: 308 sentences under review, 1,803 constructed
-  negative pairs, 46 source documents, and 100 blind human labels. The central result is negative —
-  substituting a set-overlap index for a threshold sweep does not work — and the paper reports the
-  two consequences that result forces.</p>
+  <p><em>What a Lexical Threshold Commits You To: Auditing Set-Overlap Metrics in Citation
+  Verification</em> — working paper, manuscript in preparation.</p>
+  <p>Its central result is negative: substituting a set-overlap index for a threshold sweep does not
+  work. The paper then reports the two consequences that this failure forces, and states plainly where
+  its own evidence stops.</p>
 
   <h2>Contact</h2>
   <p>Correspondence is welcome at the address above. I am not affiliated with any institution.</p>
