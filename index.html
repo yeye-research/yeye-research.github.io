@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ye Ye — Independent Researcher</title>
+<meta name="description" content="Ye Ye, Independent Researcher. Citation verification, evaluation methodology, annotation reliability.">
+<style>
+  :root{
+    --ink:#1a1a1a; --muted:#5b6470; --line:#e3e6ea; --accent:#7a1f1f; --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.7 -apple-system,"Segoe UI","Helvetica Neue","PingFang SC","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:72px 24px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px}
+  h1{
+    font-size:2.1rem; font-weight:600; letter-spacing:-.015em;
+    margin:0 0 6px; line-height:1.2;
+  }
+  .aff{color:var(--muted); font-size:1.02rem; margin:0 0 14px}
+  .mail{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:.95rem; color:var(--accent); text-decoration:none;
+    border-bottom:1px solid rgba(122,31,31,.3); padding-bottom:1px;
+  }
+  .mail:hover{border-bottom-color:var(--accent)}
+  h2{
+    font-size:.78rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase;
+    color:var(--muted); margin:38px 0 14px;
+  }
+  p{margin:0 0 14px}
+  ul{margin:0; padding-left:20px}
+  li{margin-bottom:7px}
+  .note{
+    margin-top:44px; padding:16px 18px; background:#f7f8f9;
+    border-left:3px solid var(--line); color:var(--muted); font-size:.9rem;
+  }
+  footer{
+    margin-top:56px; padding-top:20px; border-top:1px solid var(--line);
+    color:var(--muted); font-size:.82rem;
+  }
+  @media (max-width:520px){
+    .wrap{padding:48px 20px 64px}
+    h1{font-size:1.7rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Ye Ye</h1>
+    <p class="aff">Independent Researcher</p>
+    <!-- 邮箱必须与 OpenReview 注册邮箱完全一致；若换邮箱，这里和 href 两处都要改 -->
+    <a class="mail" href="mailto:1433655881@qq.com">1433655881@qq.com</a>
+  </header>
+
+  <h2>Research interests</h2>
+  <p>I study how automated systems decide whether a sentence is supported by a source, and what
+  those decisions silently commit their operators to.</p>
+  <ul>
+    <li>Citation verification and attribution evaluation</li>
+    <li>Threshold audits and cost-sensitive decision making</li>
+    <li>Non-identifiability of lexical-overlap metrics</li>
+    <li>Reliability of human annotation in evaluation</li>
+    <li>Reproducibility of empirical claims</li>
+  </ul>
+
+  <h2>Current work</h2>
+  <p>A full audit of one citation-checking pipeline: 308 sentences under review, 1,803 constructed
+  negative pairs, 46 source documents, and 100 blind human labels. The central result is negative —
+  substituting a set-overlap index for a threshold sweep does not work — and the paper reports the
+  two consequences that result forces.</p>
+
+  <h2>Contact</h2>
+  <p>Correspondence is welcome at the address above. I am not affiliated with any institution.</p>
+
+  <div class="note">
+    This page is my personal academic homepage. It is the URL listed on my OpenReview profile.
+  </div>
+
+  <footer>
+    Last updated: November 2026
+  </footer>
+
+</div>
+</body>
+</html>
